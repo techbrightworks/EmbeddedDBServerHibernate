@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <display-name>EmbeddedServer</display-name>  
+ <servlet>
+  <display-name>Admin_Servlet_Start</display-name>
+  <servlet-name>Admin_Servlet_Start</servlet-name>
+  <servlet-class>org.srinivas.siteworks.hibernate.Admin_Servlet_Start</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>Admin_Servlet_ShutDown</display-name>
+  <servlet-name>Admin_Servlet_ShutDown</servlet-name>
+  <servlet-class>org.srinivas.siteworks.hibernate.Admin_Servlet_ShutDown</servlet-class>
+ </servlet> 
+ 
+ <servlet-mapping>
+  <servlet-name>Admin_Servlet_Start</servlet-name>
+  <url-pattern>/Admin_Servlet_Start</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>Admin_Servlet_ShutDown</servlet-name>
+  <url-pattern>/Admin_Servlet_ShutDown</url-pattern>
+ </servlet-mapping> 
+</web-app>
